@@ -1,2 +1,2 @@
-# Project_-2
+# Project_2
 Global Temperature
