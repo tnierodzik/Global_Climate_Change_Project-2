@@ -6,3 +6,6 @@ Global temperatures have been on the rise ever since the Industrial Revolution, 
 
 The detailed map visualizes global temperature changes over time. Map contains several layers to filter and compare temperatures to various factors.
 
+Fact Sources
+https://climate.nasa.gov/vital-signs/carbon-dioxide/
+https://www.eea.europa.eu/signals/signals-2017/articles/energy-and-climate-change
