@@ -8,6 +8,15 @@ The detailed map visualizes global temperature changes over time. Map contains s
 
 
 
+
+
+
+
+
+
+
+
+
 Fact Sources
 
 https://climate.nasa.gov/vital-signs/carbon-dioxide/
