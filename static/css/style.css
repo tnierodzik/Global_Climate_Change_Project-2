@@ -1,10 +1,25 @@
-body {
+/* body {
   padding: 0;
   margin: 0;
-}
+} */
 
-#map,
+/* #map,
 body,
 html {
   height: 100%;
+} */
+
+#dashboard-title {
+  background-size: cover;
+  background-image: url("../images/banner_image1.jpg");
+  color: black;
 }
+
+/* 
+.well {
+  background-color: rgb(217, 215, 240);
+}
+
+.panel {
+  background-color: rgb(217, 215, 240); 
+} */
