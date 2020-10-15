@@ -1,4 +1,10 @@
-*config.js
+*.DS_Store
+*.ipynb_checkpoints/
+*Resources/.DS_Store
+*Resources/Coordinate Data/.DS_Store
+*cleaning_of_data/.DS_Store
+*static/.DS_Store
+*static/js/.DS_Store
 *.DS_Store
 *__pycache__/
 *.py[cod]
