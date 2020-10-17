@@ -1,6 +1,6 @@
 
 function energyConsumption(){
-  d3.csv("Data Resources/Energy Consumption/global-primary-energy.csv", function(incomingData) {
+  d3.csv("Resources/Energy Consumption/global-primary-energy.csv", function(incomingData) {
     
     console.log(incomingData);
 
