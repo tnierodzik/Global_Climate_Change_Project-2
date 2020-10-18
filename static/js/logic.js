@@ -64,7 +64,7 @@ d3.json(geoData, function(data) {
     var labels = [];
 
     // Add min & max
-    var legendInfo = "<h1>Yearly Average Temperatures</h1>" +
+    var legendInfo = "<h1>Yearly Average Temp.</h1>" +
       "<div class=\"labels\">" +
       "<div class=\"min\">" + Math.round(limits[0]) + "</div>" +
       "<div class=\"max\">" + Math.round(limits[limits.length - 1]) + "</div>" +
