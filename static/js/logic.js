@@ -13,6 +13,7 @@ d3.json(geoData, function (data) {
       maxZoom: 18,
       zoomOffset: -1,
       id: 'mapbox/streets-v11',
+      color: 'white',
       accessToken: API_KEY
     }
   )
@@ -39,14 +40,15 @@ d3.json(geoData, function (data) {
       // q for quartile, e for equidistant, k for k-means
       mode: 'q',
       // Border color
-      color: '#fff',
-      weight: 0,
+      color: 'white',
+      weight: 1,
+      fillColor: feature.properties.year_temp_2013,
       fillOpacity: 0.1
     }
   }
 
   // Create a new choropleth layer for temperature
-  L.geoJson(data, {
+  var geojson = L.geoJson(data, {
     style: styleInfo,
     onEachFeature: function (feature, layer) {
       layer.bindPopup(
@@ -64,7 +66,7 @@ d3.json(geoData, function (data) {
   // Sending our earthquakes layer to the createMap function
 
   // Create a new choropleth layer for emissions
-  L.geoJson(data, {
+  var geojson = L.geoJson(data, {
     style: styleInfo,
     onEachFeature: function (feature, layer) {
       layer.bindPopup(
@@ -80,7 +82,7 @@ d3.json(geoData, function (data) {
     }
   }).addTo(myMap)
 
-  // // Set up the legend
+  // Set up the legend
   var legend = L.control({ position: 'bottomright' })
   legend.onAdd = function () {
     var div = L.DomUtil.create('div', 'info legend')
