@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
 /*body,
 html */
 #map
@@ -9,6 +10,13 @@ html */
   height: 400px;
   width: 1000px;
 }
+
+#dashboard-title {
+  background-size: cover;
+  background-image: url("../images/banner_image.jpg");
+  color: white;
+}
+
 
 .leaflet-popup-content {
   text-align: center;
@@ -50,13 +58,6 @@ html */
 
 h1 {
   text-align: center;
-}
-
-
-#dashboard-title {
-  background-size: cover;
-  background-image: url("../images/banner_image.png");
-  color: white;
 }
 
 
