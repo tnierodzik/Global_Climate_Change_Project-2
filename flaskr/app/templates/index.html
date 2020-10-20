@@ -15,12 +15,12 @@
 
   </head>
 
-  <body>
+  <body style="background-color: lightgray;">
 
-    <div class="container">
+    <div class="container" id="Background">
       <div class="row">
         <div class="col-md-12 jumbotron text-center" id="dashboard-title">
-          <h2>Global Climate Change</h2>
+          <h1 style="color: black">Global Climate Change</h1>
           <!-- <h4>Belly Buttons - A Jungle of Microbial Diversity</h4> -->
         </div>
       </div>
@@ -45,13 +45,13 @@
         <div class="col-md-12">
           <div id="map"></div>
                 <div class="map-overlay-inner">
-                  <h2>Global Average Temperture</h2>
                   <label id="month"></label>
                   <input id="slider" type="range" min="1950" max="2013" step="1" value="0" />
                 </div>
           </div>
         </div>
-
+        <br>
+        <row class="col-md-12"></row>
         <!-- The div where we will inject our chart -->
         <div class="col-md-12">
           <div id="chart"></div>

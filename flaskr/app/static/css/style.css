@@ -5,16 +5,25 @@ body {
 
 #dashboard-title {
   background-size: cover;
-  background-image: url(“../images/banner_image.jpg”);
+  background-image: url("../images/banner_image2.jpg");
   color: white;
 }
+
+#Background {
+  background-color: lightgray;
+}
+
+/* #chart {
+  padding-top: 50px;
+} */
 
 /*body,
 html */
 #map
 {
   height: 400px;
-  width: 1000px;
+  width: cover;
+/*  background-size: cover;*/
 }
 
 .leaflet-popup-content {

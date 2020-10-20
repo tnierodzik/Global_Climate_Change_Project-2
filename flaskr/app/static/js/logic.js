@@ -13,6 +13,8 @@
     accessToken: API_KEY
   }).addTo(myMap);
 
+// Load in geojson data -> we don't need with when we're using a db
+// var geoData = "/static/data/updated_world.json";
 var url = '/climate'
 
 var data
@@ -23,17 +25,6 @@ d3.json(url, function(d) {
 
 function createMap(year) {
   // Creating map object
-
-
-  // Load in geojson data -> we don't need with when we're using a db
-  // var geoData = "/static/data/updated_world.json";
-
-var years = [
-        '2010',
-        '2011',
-        '2012',
-        '2013'
-];
 
 //function filterBy(year) {
 //var filters = [`year_temp_${year}`, year];
@@ -56,7 +47,7 @@ var years = [
       valueProperty: `year_temp_${year}`,
 
       // Set color scale
-      scale: ["#ffffb2", "#b10026"],
+      scale: ["#0703fc", "#fc0303"],
 
       // Number of breaks in step range
       steps: 10,
@@ -81,7 +72,7 @@ var years = [
         'Country: ' +
           feature.properties.name +
           '<br>Temperature:<br>' +
-          Math.round(feature.properties.year_temp_2013, 2) +
+         (+feature.properties[`year_temp_${year}`]).toFixed(2) +
           '°C');
       }
     }).addTo(myMap);
@@ -98,10 +89,10 @@ var years = [
       '<h3>Average Temperature</h3>' +
       '<div class="labels">' +
       '<div class="min">' +
-      Math.round(limits[0]) +
+      (limits[0]).toFixed(2) +
       '</div>' +
       '<div class="max">' +
-      Math.round(limits[limits.length - 1]) +
+      (limits[limits.length - 1]).toFixed(2) +
       '</div>' +
       '</div>'
     div.innerHTML = legendInfo
@@ -124,7 +115,7 @@ var years = [
         .getElementById('slider')
         .addEventListener('input', function(e) {
           var year = parseInt(e.target.value, 10);
-          console.log(year)
+          //console.log(year)
           updateMap(year)
           //filterBy(year);
         });
@@ -152,7 +143,7 @@ function updateMap(year){
       valueProperty: `year_temp_${year}`,
 
       // Set color scale
-      scale: ["#ffffb2", "#b10026"],
+      scale: ["#0703fc", "#fc0303"],
 
       // Number of breaks in step range
       steps: 10,
@@ -177,14 +168,14 @@ function updateMap(year){
         'Country: ' +
           feature.properties.name +
           '<br>Temperature:<br>' +
-          Math.round(feature.properties[`year_temp_${year}`], 2) +
+         (+feature.properties[`year_temp_${year}`]).toFixed(2) +
           '°C');
       }
     })
 
     myMap.addLayer(geojson)
 
-    // energyConsumption(year)
+    energyConsumption(year)
 
 }
 
@@ -192,7 +183,7 @@ function updateMap(year){
 function energyConsumption() {
   d3.json("/energy", function (incomingData) {
 
-    console.log(incomingData);
+    //console.log(incomingData);
 
     year = incomingData.map(d => d["Year"])
 
