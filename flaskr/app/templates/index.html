@@ -42,12 +42,18 @@
         </div> -->
 
         <!-- The div where we will inject our map -->
-        <div class="col-md-8">
+        <div class="col-md-12">
           <div id="map"></div>
+                <div class="map-overlay-inner">
+                  <h2>Global Average Temperture</h2>
+                  <label id="month"></label>
+                  <input id="slider" type="range" min="1950" max="2013" step="1" value="0" />
+                </div>
+          </div>
         </div>
 
         <!-- The div where we will inject our chart -->
-        <div class="col-md-4">
+        <div class="col-md-12">
           <div id="chart"></div>
         </div>
       </div>
