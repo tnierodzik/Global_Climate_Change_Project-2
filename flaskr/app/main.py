@@ -6,7 +6,7 @@ import pymongo
 # Create an instance of our Flask app.
 app = Flask(__name__)
 
-# Un comment these two to connect to the local DB
+# connect to the local DB
 client = pymongo.MongoClient("mongodb://localhost:27017")
 db1 = client.global_climate
 db2 = client.energy_consumptions
@@ -18,6 +18,7 @@ def index():
     # Return the template with the teams list passed in
     return render_template('index.html')#, teams=teams)
 
+# Set the route for climate data
 @app.route('/climate')
 def climate():
     #Pulling the data from the database
@@ -26,6 +27,7 @@ def climate():
     #jsonifying it and returning it to the frontend
     return jsonify({'features': climate_data})
 
+# Set the route for energy data
 @app.route('/energy')
 def energy():
     #Pulling the data from the database

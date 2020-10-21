@@ -53,7 +53,6 @@ function updateMap(year) {
     // Set color scale
     limits: [-10, -5, 0, 5, 10, 15, 20, 25, 30, 35],
     scale: ['#4560EB', '#575BD8', '#6955C4', '#7B4FB1', '#8D4A9D', '#A0448A', '#B23F76', '#C43963', '#D6334F', '#E82E3C'],
-
     // q for quartile, e for equidistant, k for k-means
     mode: "q",
     style: {
@@ -62,7 +61,6 @@ function updateMap(year) {
       weight: 1,
       fillOpacity: 0.8
     },
-
     onEachFeature: function (feature, layer) {
       layer.bindPopup(
         'Country: ' +
@@ -72,6 +70,7 @@ function updateMap(year) {
         '°C');
     }
   })
+
 
   // Add the legend
   legend.onAdd = function () {
@@ -101,8 +100,9 @@ function updateMap(year) {
   // Adding legend to the map
   legend.addTo(myMap);
   myMap.addLayer(geojson)
-  // energyConsumption(year)
 }
+
+
 
 // Updated the 'slider'
 document
@@ -116,7 +116,6 @@ document
 
 
 // Created a function for updating the energy data
-
 function energyConsumption() {
   d3.json("/energy", function (incomingData) {
     console.log(incomingData);
@@ -137,7 +136,6 @@ function energyConsumption() {
     ];
 
     var layout = {
-      // title: "Global direct primary energy consumption",
       xaxis: {
         title: "Year"
       },
@@ -149,5 +147,5 @@ function energyConsumption() {
     Plotly.newPlot('chart', traces, layout);
   })
 }
-//createMap(year = 1957)
+
 energyConsumption()
