@@ -1,7 +1,7 @@
 // Creating map object
 var myMap = L.map("map", {
   center: [37.611251, 2.742210],
-  zoom: 2.5
+  zoom: 2.0
 });
 
 // Set up the legend
