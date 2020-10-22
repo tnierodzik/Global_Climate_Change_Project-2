@@ -49,19 +49,19 @@ The detailed map visualizes global temperature changes over time. Map contains s
   
 * Created MongoDB data and loaded a modified geojson file and a modified Energy consumption file
 
-### Flask API:
+## Flask API:
 
 Click here to view [FLASK API](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/flaskr/app/main.py)
 
 
-### Final Look of the webpage:
+## Final Look of the webpage:
 
 The final look of the webpage is below:
 
 ![img](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/screenshots/webpage.png)
 
 
-### Conclusions:
+## Conclusions:
 
 * Climate change is very real. As time increases, the average global temperature is slowly increasing.
   * The average temperature of Canada in 1950 was -5.95°C compared to -1.64°C in 2013
@@ -71,5 +71,4 @@ The final look of the webpage is below:
   * There is a positive correlation between energy consumption and average global temperatures
   * 5 different energy resources consumed in 1950 compared to 10+ in 2013 
   * 5 times as much coal and 10 times more oil consumed in the same time frame
-
 
