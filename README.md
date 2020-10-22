@@ -28,7 +28,7 @@ The detailed map visualizes global temperature changes over time. Map contains s
     https://ourworldindata.org/energy
 
 
-### Data Cleaning - Extraction
+### Data Cleaning & Extraction:
 
 * 3 data sources are used:
   * Temperature Data
@@ -61,11 +61,15 @@ The final look of the webpage is below:
 ![img](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/screenshots/webpage.png)
 
 
+### Conclusions:
+
+* Climate change is very real. As time increases, the average global temperature is slowly increasing.
+  * The average temperature of Canada in 1950 was -5.95°C compared to -1.64°C in 2013
+  * The average temperature of America in 1950 was 8.66°C compared to 11.30°C in 2013 
+
+* Energy consumption has been increasing exponentially for the past century. 
+  * There is a positive correlation between energy consumption and average global temperatures
+  * 5 different energy resources consumed in 1950 compared to 10+ in 2013 
+  * 5 times as much coal and 10 times more oil consumed in the same time frame
 
 
-### Questions to Answer:
-
-* Climate change - is it real?
-	* Yes, climate change is very real. As time increases global average temperatures are increasing.
-* Energy consumption effects on global average temperatures?
-  * There is a correlation between energy consumption and global temperatures. Dramatic increasing in energy consumption from 1950 to 2013.
