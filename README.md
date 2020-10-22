@@ -39,13 +39,27 @@ The detailed map visualizes global temperature changes over time. Map contains s
 
 * Extracted data using pandas in Python
 
-* Data Cleaning process involved below steps:
-  * Drop rows containing N/A values 
-  * Renamed and dropped unnecessary columns
-  * Merged CSV files together
-  * Created new dictionary within geojson file containing temperature and energy emission
+* Dropped rows containing N/A values and renamed and dropped unnecessary columns
+
+* Merged data frames together using an inner-join
+
+* Parsed temperature and emissions data for the same years
+
+* Created new GeoJSON properties containing temperature and energy emission data
   
 * Created MongoDB data and loaded a modified geojson file and a modified Energy consumption file
+
+### Flask API:
+
+Click here to view [FLASK API](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/flaskr/app/main.py)
+
+
+### Final Look of the webpage:
+
+The final look of the webpage is below:
+
+![img](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/screenshots/webpage.png)
+
 
 
 
