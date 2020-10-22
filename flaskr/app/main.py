@@ -7,9 +7,10 @@ import pymongo
 app = Flask(__name__)
 
 # connect to the local DB
-client = pymongo.MongoClient("mongodb://localhost:27017")
-db1 = client.global_climate
-db2 = client.energy_consumptions
+client1 = pymongo.MongoClient("mongodb://preetiv:lY36FjqL2g6eux1c@cluster0-shard-00-00.dj91d.mongodb.net:27017,cluster0-shard-00-01.dj91d.mongodb.net:27017,cluster0-shard-00-02.dj91d.mongodb.net:27017/global_climate?ssl=true&replicaSet=atlas-6s5p4q-shard-0&authSource=admin&retryWrites=true&w=majority")
+client2 = pymongo.MongoClient("mongodb://preetiv:lY36FjqL2g6eux1c@cluster0-shard-00-00.dj91d.mongodb.net:27017,cluster0-shard-00-01.dj91d.mongodb.net:27017,cluster0-shard-00-02.dj91d.mongodb.net:27017/energy_consumptions?ssl=true&replicaSet=atlas-6s5p4q-shard-0&authSource=admin&retryWrites=true&w=majority")
+db1 = client1.global_climate
+db2 = client2.energy_consumptions
 
 
 # Set route
