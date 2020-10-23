@@ -74,3 +74,10 @@ The final look of the webpage is below:
   * 5 different energy resources consumed in 1950 compared to 10+ in 2013 
   * 5 times as much coal and 10 times more oil consumed in the same time frame
 
+
+## Deployment of Flask App to Heroku:
+
+* Used the database on cloud.
+
+### Heroku Deployment - https://global-climate-change.herokuapp.com/
+
