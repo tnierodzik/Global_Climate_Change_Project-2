@@ -77,7 +77,7 @@ The final look of the webpage is below:
 
 ## Deployment of Flask App to Heroku:
 
-* Used the database on cloud.
+* Used the database on the MongoDB cloud.
 
 ### Heroku Deployment - https://global-climate-change.herokuapp.com/
 
