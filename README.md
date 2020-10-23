@@ -49,17 +49,23 @@ The detailed map visualizes global temperature changes over time. Map contains s
   
 * Created MongoDB data and loaded a modified geojson file and a modified Energy consumption file
 
+
 ## Flask API:
 
 Click here to view [FLASK API](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/flaskr/app/main.py)
 
 
+Click here to view [FLASK API](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/flaskr/app/main.py)
+
 ## Final Look of the webpage:
+
 
 The final look of the webpage is below:
 
 ![img](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/screenshots/webpage.png)
 
+
+![img](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/screenshots/webpage.png)
 
 ## Conclusions:
 
