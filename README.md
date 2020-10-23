@@ -8,6 +8,7 @@ Global temperatures have been increasing ever since the Industrial Revolution, a
 
 The detailed map visualizes global temperature changes over time. Map contains several layers to filter and compare temperatures to various factors.
 
+
 ## ETL (Extraction, Transformation & Load)
 
 ### Data Sources:
@@ -55,17 +56,12 @@ The detailed map visualizes global temperature changes over time. Map contains s
 Click here to view [FLASK API](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/flaskr/app/main.py)
 
 
-Click here to view [FLASK API](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/flaskr/app/main.py)
-
 ## Final Look of the webpage:
-
 
 The final look of the webpage is below:
 
 ![img](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/screenshots/webpage.png)
 
-
-![img](https://github.com/tnierodzik/Global_Climate_Change_Project-2/blob/cleanup_data_1/screenshots/webpage.png)
 
 ## Conclusions:
 
@@ -77,5 +73,4 @@ The final look of the webpage is below:
   * There is a positive correlation between energy consumption and average global temperatures
   * 5 different energy resources consumed in 1950 compared to 10+ in 2013 
   * 5 times as much coal and 10 times more oil consumed in the same time frame
-
 
